@@ -133,6 +133,8 @@
 .plate {
 	border-radius: 50px;
 	background-color: white;
+	box-shadow: 10px 5px 10px #00000040;
+
 
 }
 
@@ -208,4 +210,176 @@
 	position: absolute;
     bottom: 30px;
     left: 90px;
+}
+
+#doc .plate {
+	width: 864px;
+	height: 402px;
+
+}
+
+#doc .gallery {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+#doc {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+#doc .name{
+	width: 864px;
+	height: 70px;
+
+}
+
+#place .plate{
+	width: 1760px;
+	height: 760px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	 align-items: center;
+
+}
+
+#place p{
+	width: 37%;
+
+	text-transform: uppercase;
+	font-family: Rubik;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+
+}
+
+#place .gallery {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	width: 992px;
+}
+
+#place img{
+	width: 481px;
+	height: 320px;
+}
+
+
+#timetable .plate {
+	width: 422px;
+	height: 500px;
+
+}
+
+#timetable .plate h1 {
+	margin: 10px auto 0 auto !important;
+	padding: 20px 0 20px 0;
+	text-transform: uppercase;
+	font-family: Rubik;
+	font-size: 29px;
+	font-weight: 500;
+	line-height: 29px;
+	text-align: center;
+	text-shadow: 0px 4px 4px #00000040;
+
+
+	width: 388px;
+	border-radius: 31px;
+	color: white;
+	background-color: #27BF49;
+
+
+
+
+}
+
+
+#info {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+#info .plate {
+	width: 865px;
+	height: 461px;
+
+}
+
+#info .plate p {
+	margin: 20px auto 0 auto;
+	text-transform: uppercase;
+	font-family: Rubik;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	width: 90%;
+
+}
+
+#info .name{
+	width: 865px;
+	height: 70px;
+
+}
+
+#info button {
+	margin-top: 30px;
+	width: 389px;
+	height: 83px;
+	border-radius: 41.5px;
+	background-color: #48D356;
+	color: white;
+	font-family: Rubik;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: center;
+	box-shadow: 5px 3px 5px 0px #00000040;
+	text-shadow: 0px 4px 4px #00000040;
+	border: 0px;
+}
+
+
+#footer {
+	margin-top: 80px;
+	padding: 30px 0 0 30px;
+	width: 100%;
+	height: 351px;
+	background-color: black;
+	color: #efefef;
+}
+
+#footer h1 {
+	font-family: Rubik;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 35px;
+	text-align: left;
+
+}
+
+#footer p {
+	margin-top: 20px;
+	font-family: Rubik;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: left;
+
 }

@@ -300,8 +300,13 @@
 	color: white;
 	background-color: #27BF49;
 
+}
 
 
+#timetable .name{
+	width: 1326px;
+	height: 70px;
+	margin: 0 auto 30px auto;
 
 }
 

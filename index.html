@@ -3,239 +3,261 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Поездка - Сайт</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>Сайт конференции “Перспективные квантовые материалы”</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="bg_1">
-		<!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark" id="header-nav">
-            <div class="container" style="margin-right: 5vw;">
-                <!-- <a class="navbar-brand" href="{% url 'home' %}"><i class="fa-solid fa-paw fa-xs"></i> Nepike website <i class="fa-solid fa-paw fa-xs"></i></a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#org">ОРГАНИЗАТОРЫ</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#napr">НАПРАВЛЕНИЯ</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#speak">СПИКЕРЫ</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#timetable">РАСПИСАНИЕ</a></li>
 
-                        <!-- <li class="nav-item"><a class="nav-link" href="{% url 'qunix' %}">Chat</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
+    <div id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom container">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#org">ОРГАНИЗАТОРЫ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">СПИКЕРЫ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timetable">РАСПИСАНИЕ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prog">ПРОГРАММНЫЙ КОМИТЕТ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#part">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#place">РАСПОЛОЖЕНИЕ</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="wrapper" class="container">
+        <div id="header" class="row">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4"><img src="img/logo.png" alt="logo"></div>
+                <div class="col-lg-9 col-md-8 text-center d-grid gap-3 plate">
+                    <h1 class="fw-bold lh-1">Школа по актуальным проблемам физики конденсированного состояния<br>“Перспективные квантовые материалы”</h1>
+                    <h3 class="fw-light lh-1">Программа школы включает три цикла лекций приглашенных лекторов, а также устные доклады молодых участников.</h3>
+                    <h2 class="text-decoration-underline lh-1">26 сентября - 2 октября 2024, г. Махачкала </h2>
+                </div>
+            </div>
+            <div class="row"><br><br></div>
+            
+        </div>
+
+        <div id="page" class="row">
+            <div class="col-12 d-grid gap-5">
+                <div class="row" id="invitation">
+                    <div class="col-12"><br></div>
+                    <p class="fs-4">Приглашаем Вас принять участие в научной школе, посвящённой актуальным вопросам физики магнетизма и сверхпроводимости. Научная школа будет проводиться с целью обмена опытом и знаниями между ведущими учёными в этой области, а также для привлечения молодых исследователей к работе над перспективными проектами. В рамках научной школы планируются лекционные курсы от ведущих учёных, а также устные доклады участников, а также предоставлена возможность для обсуждения и обмена идеями между участниками. Участие в научной школе ориентировано на студентов старших курсов, аспирантов и молодых научных сотрудников.</p>
+                </div>
+
+<!--                 <div class="row" id="org">
+                    <h2 class="fw-bold text-center">Организаторы</h2>
+                    <div class="col-12"><br></div>
+                    <div class="col-md-3 text-center"><img src="img/ДГУ.png" alt="ДГУ"></div>
+                    <div class="col-md-3 text-center"><img src="img/ФИАН.png" alt="ФИАН"></div>
+                    <div class="col-md-3 text-center"><img src="img/ДФИЦ.png" alt="ДФИЦ"></div>
+                    <div class="col-md-3 text-center"><img src="img/МФТИ.png" alt="МФТИ"></div>
+                </div> -->
+                <div class="row" id="org">
+                    <h2 class="fw-bold text-center">Организационный комитет</h2>
+                    <div class="col-12"><br></div>
+                    <div class="col-md-4">
+                        <div class="img-wrapper mx-auto"><img src="img/Нухов.jpg" alt="Орг 1" style="top: -121px; left: -445px; width: 1000px;"></div>
+                        <h4 class="text-center">Азим Кадимович Нухов<br>(МФТИ)</h4>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="img-wrapper mx-auto"><img src="img/Моргун.jpg" alt="Орг 2" style="top: 0px; left: 0px; width: 500px;"></div>
+                        <h4 class="text-center">Леонид Александрович Моргун<br>(ФИАН)</h4>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="img-wrapper mx-auto"><img src="img/Дегтяренко.jpg" alt="Орг 3" style="top: 0px; left: -25px; width: 350px;"></div>
+                        <h4 class="text-center">Алёна Юрьевна Дегтяренко<br>(ФИАН)</h4>
+                    </div>
+                </div>
+
+                <div id="dates" class="row" >
+                    <h2 class="fw-bold text-center">Ключевые даты</h2>
+                    <div class="col-12"><br></div>
+                    <ul class="col-8 mx-auto fs-4">
+                        <li><span class="fw-bold">???</span> - начало приема подачи заявок.</li>
+                        <li><span class="fw-bold">01.08.2024</span> - крайний срок подачи заявки на участие в научной школе.</li>
+                        <li><span class="fw-bold">???</span> - публикация списка отобранных участников.</li>
+                        <li><span class="fw-bold">01.09.2024</span> - рассылка второго информационного письма.</li>
+                        <li><span class="fw-bold">26.09.2024-02.10.2024</span> - проведение научной школы.</li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Page content-->
-        
-        <div class="text-center" style="height: 41.6vw; margin: 0;">
-        	<h1>26.09 — 02.10.2024</h1>
-        </div>
 
-	</div>
-	<div id="bg_2">
+                <div id="speakers" class="row d-grid gap-3 text-center">
+                    <h2 class="fw-bold text-center">Приглашенные лекторы</h2>
 
-        <div id="title">
-            <h1 style="margin-bottom: 0.3vw;">Школа по актуальным проблемам физики конденсированного состояния “Перспективные квантовые материалы”</h1>
-            <p class="m-0">Программа Школы включает три цикла лекций приглашенных лекторов, а также устные доклады молодых участников.</p>
-        </div>
-
-		<div class="myblock" id="org" style="padding-top: 8vw; margin: 0px 50px 0px 50px;">
-            <div class="name text-center">
-                <h1>ОРГАНИЗАТОРЫ</h1>
-            </div>
-            <div class="gallery">
-                <div class="plate text-center">
-                    <img src="img/KlY0mOATSLibjuEANAqAWJhL7NbrjWkY7Xyoc4qX_medium 1.png" width="354px">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="plate text-center">
-                    <img src="img/wmERTozFiJIGAwyXJUuHl_ZBVtf0k67Lbfb6fzzTBhhTsdGSY0pI_FK01dUct8P2lbRCmh4LMZTpbjw5q7FU-Xek 1.png" width="354px">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="plate text-center">
-                    <img src="img/image 10.png" width="354px">
-                    <p>Центр «Высокотемпературной сверхпроводимости и квантовых материалов» им. В.Л. Гинзбурга организован как научное подразделение ФИАН в 2017 году по приказу директора №230 от 29.06.2017г., на базе «Отдела высокотемпературной сверхпроводимости и наноструктур» ФИАН.</p>
-                </div>
-                <div class="plate text-center">
-                    <h1>ПРИ УЧАСТИИ</h1>
-                    <img src="img/1681537181_papik-pro-p-dgtu-logotip-vektor-2 1.png">
-                    <img src="img/mipt 1.png">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="myblock" id="napr" style="padding-top: 4vw; margin: 0px 50px 0px 50px;">
-            <div class="name text-center">
-                <h1>НАПРАВЛЕНИЯ</h1>
-            </div>
-            <div class="gallery">
-                <div class="plate text-center">
-                    <h1>Физика твердого тела</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>Магнетизм</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>Сверхпроводимость</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>Материалы</h1>
-                </div>
-            </div>
-        </div>
-        
-        <div class="myblock" id="speak" style="padding-top: 4vw; margin: 0px 50px 0px 50px;">
-            <div class="name text-center">
-                <h1>СПИКЕРЫ</h1>
-            </div>
-            <div class="gallery">
-                <div class="plate text-center">
-                    <p><b>Артем Ромаевич Оганов</b><br>(Проф., д.ф.м.н., Сколтех)<br><br><b>Предсказание и дизайн новых материалов</b></p>
-                    <img src="img/1440879.png" width="400px">
-                </div>
-                <div class="plate text-center">
-                    <p><b>Евгений Владимирович Чулков</b><br>(Проф., д.ф.-м.н., Donostia International Physics Center (Сан-Себастьян) and University of the Basque Country, Санкт-Петербургский Гос. Университет".)<br><br><b>Новые топологически нетривиальные материалы (включая АФМ топ. изоляторы) и “Рашбовские” материалы. DFT расчеты электронных спектров материалов.</b></p>
-                    <img src="img/1440879.png" width="400px">
-                </div>
-                <div class="plate text-center">
-                    <p><b>Александр Николаевич Квашнин</b><br>(Проф. д.ф.-м.н., Сколтех)<br><br><b>Теория и практика расчетов свойств новых сверхпроводников в рамках теории Мигдала-Элиашберга</b></p>
-                    <img src="img/1440879.png" width="400px">
-                </div>
-            </div>
-        </div>
-
-        <div class="myblock" id="doc" style="padding-top: 4vw; margin: 0px 50px 0px 50px;">
-            <div>
-                <div class="name text-center">
-                    <h1>ПЛЕНАРНЫЕ ДОКЛАДЫ</h1>
-                </div>
-                <div class="gallery">
-                    <div class="plate text-center"></div>
-                    <div class="plate text-center"></div>
-                    <div class="plate text-center"></div>
-                </div>
-            </div>
-            <div>
-                <div class="name text-center">
-                    <h1>УСТНЫЕ ДОКЛАДЫ</h1>
-                </div>
-                <div class="gallery">
-                    <div class="plate text-center"></div>
-                    <div class="plate text-center"></div>
-                    <div class="plate text-center"></div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="myblock" id="place" style="padding-top: 4vw; margin: 0px 50px 0px 50px;">
-            <div class="name text-center">
-                <h1>РАСПОЛОЖЕНИЕ</h1>
-            </div>
-            <div class="plate text-center">
-                <p><b>Даты:</b> 26.09 —02.10.2024<br><br><b>Место:</b> https://nok-juravli.ru/<br><br> НОК «Журавли» — это современный научно-оздоровительный комплекс, расположенный на берегу Каспийского моря в 5 км от Махачкалы, столицы республики Дагестан. Комплекс построен по инициативе перспективного российского учёного Магомеда Хабибовича Магомедова и нацелен на внедрение современных научных разработок, технологий в оздоровление и формирование здорового образа жизни. Именно поэтому основной акцент сделан на здоровое питание и гидропроцедуры, в том числе, с использованием морской воды.</p>
-                <div class="gallery">
-                    <img src="img/8-1 1.png">
-                    <img src="img/Mahachkala-Zhuravli 1.png">
-                    <img src="img/xxxl 1.png">
-                    <img src="img/8 1.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="myblock" id="timetable" style="padding-top: 4vw; margin: 0px 50px 0px 50px;">
-            <div class="name text-center">
-                <h1>РАСПИСАНИЕ</h1>
-            </div>
-            <div class="gallery">
-                <div class="plate text-center">
-                    <h1>26.09</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>27.09</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>28.09</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>29.09</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>30.09</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>01.10</h1>
-                </div>
-                <div class="plate text-center">
-                    <h1>02.10</h1>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="myblock" id="info" style="padding-top: 4vw; margin: 0px 50px 0px 50px;">
-            <div>
-                <div class="name text-center">
-                    <h1>УЧАСТИЕ</h1>
-                </div>
-                <div class="gallery">
-                    <div class="plate text-center">
-                        <p><b>Участники Школы:</b><br>На Школу приглашаются молодые аспиранты, научные сотрудники и продвинутые студенты 5-6 курса. Ввиду ограниченного числа мест, участники будут отобраны по конкурсу, на основании заполненной ими анкеты и рекомендации научного руководителя.<br><br><b>Финансовые условия участия:</b> полностью оплачивается проживание и питание (вместе с сопровождающими, если есть такие), а также проезд. Проезд сопровождающих оплачивается отдельно, самим участником.</p>
-                        <button onclick="alert('ЗДЕСЬ БУДЕТ ССЫЛКА НА ГУГЛ-ФОРМУ!');">ПРИСОЕДЕНИТЬСЯ</button>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/lec1.jpg" alt="Лектор 1" style="top: 0px; left: 0px; width: 200px;"></div>
+                        </div>
+                        <p class="col-md-8 align-self-center"><b>Артём Ромаевич Оганов (проф., д.ф. – м.н., Сколтех.)</b><br>Компьютерный дизайн новых материалов (стабильность, термодинамика образования, структура, фононные спектры).</p>
+                    </div>
+                    
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/lec2.jpg" alt="Лектор 2" style="top: -25px; left: 0px; width: 200px;"></div>
+                        </div>
+                        <p class="col-md-8"><b>Александр Николаевич Квашнин (проф. д.ф.-м.н., Сколтех)</b><br>Теория и практика расчетов свойств новых сверхпроводников в рамках теории Мигдала-Элиашберга.</p>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/lec3.jpg" alt="Лектор 3" style="top: -20px; left: 0px; width: 200px;"></div>
+                        </div>
+                        <p class="col-md-8"><b>Евгений Владимирович Чулков (проф., д.ф.-м.н., Donostia International Physics Center and University of the Basque Country, СПБГУ)</b><br>Новые топологические нетривиальные материалы (включая АФМ топ. изоляторы) и “Рашбовские” материалы. DFT расчеты электронных спектров материалов.</p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="name text-center">
-                    <h1>ОРГАНИЗАТОРЫ</h1>
-                </div>
-                <div class="gallery">
-                    <div class="plate text-center">
-                        <p><b>Программный комитет</b><br>В.М. Пудалов, д.ф.-м.н., член-кор. РАН (ФИАН и ОФН РАН),<br>
-                            А.К. Муртазаев, д.ф.-м.н., член-кор. РАН (ИФ ДФИЦ РАН и ОФН РАН),<br>
-                            М.Х. Рабаданов, д.ф.-м.н., проф. (ДГУ),<br>
-                            М.В. Садовский, д.ф.-м.н., академик РАН (ИЭФ УрО РАН и ОФН РАН),<br><br>
-                            <b>Организационный комитет</b><br>
-                            А.К. Нухов (МФТИ)<br>
-                            Л.А. Моргун (ФИАН)<br>
-                        А.Ю. Дегтяренко (ФИАН)</p>
+
+                <div id="timetable" class="row fs-5" >
+                    <h2 class="fw-bold text-center">Расписание</h2>
+                    <div class="col-12"><br></div>
+                    <div class="col-10 mx-auto">
+                        <div class="row">
+                            <table class="table table-striped ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Дата</th>
+                                        <th scope="col">День</th>
+                                        <th scope="col">Акивность</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">26 сентября 2024</th>
+                                        <td>Четверг</td>
+                                        <td>Заезд</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">27 сентября 2024</th>
+                                        <td>Пятница</td>
+                                        <td>Лекционный день</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">28 сентября 2024</th>
+                                        <td>Суббота</td>
+                                        <td>Лекционный день</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">29 сентября 2024</th>
+                                        <td>Воскресенье</td>
+                                        <td>Экскурсия</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">30 сентября 2024</th>
+                                        <td>Понедельник</td>
+                                        <td>Лекционный день</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1 октября 2024</th>
+                                        <td>Вторник</td>
+                                        <td>Лекционный день</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2 октября 2024</th>
+                                        <td>Среда</td>
+                                        <td>Отъезд</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
+                
+                <div id="prog" class="row d-grid gap-3 text-center fs-4">
+                    <h2 class="fw-bold text-center">Программный комитет</h2>
+
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12"><br></div>
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/Пудалов.jpg" alt="Орг 1" style="top: 0px; left: -100px; width: 500px;"></div>
+                        </div>
+                        <p class="col-md-7 align-self-center"><b>Владимир Моисеевич Пудалов</b><br>Доктор физико-математических наук, член-корреспондент Российской академии наук. <br>(ФИАН и ОФН РАН)</p>
+                    </div>
+                    
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/Муртазаев.jpg" alt="Орг 2" style="top: -35px; left: -100px; width: 500px;"></div>
+                        </div>
+                        <p class="col-md-7"><b>Акай Курбанович Муртазаев</b><br>Доктор физико-математических наук, член-корреспондент Российской академии наук. <br>(ИФ ДФИЦ РАН и ОФН РАН)</p>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/Рабаданов.jpg" alt="Орг 3" style="top: 0px; left: -120px; width: 500px;"></div>
+                        </div>
+                        <p class="col-md-7"><b>Муртазали Халатаевич Рабаданов</b><br>Доктор физико-математических наук, профессор <br>(Дагестанский Госуниверситет)</p>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12"><br></div>
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div class="img-wrapper"><img src="img/Садовский.jpg" alt="Орг 1" style="top: 0px; left: -100px; width: 400px;"></div>
+                        </div>
+                        <p class="col-md-7 align-self-center"><b>Михаил Виссарионович Садовский</b><br>Доктор физико-математических наук, академик Российской академии наук. <br>(ИЭФ УрО РАН и ОФН РАН)</p>
+                    </div>
+                </div>
+
+                <div id="part" class="row">
+                    <h2 class="fw-bold text-center">Участники Школы</h2>
+                    <div class="col-12"><br></div>
+                    <p class="fs-4">К участию в научной школе на конкурсной основе допускаются студенты и аспиранты, а также молодые научные сотрудники профильных ВУЗов и НИИ. Ввиду ограниченного числа мест, участники будут отобраны по конкурсу, на основании заполненной ими анкеты и рекомендации научного руководителя.</p>
+                </div>
+                <div id="fin" class="row">
+                    <h2 class="fw-bold text-center">Финансирование</h2>
+                    <div class="col-12"><br></div>
+                    <p class="fs-4">Полностью оплачивается проживание и питание (вместе с сопровождающими, если есть такие), а также проезд. Проезд сопровождающих оплачивается отдельно, самим участником.</p>
+                </div>
+
+                <div id="place" class="row" >
+                    <h2 class="fw-bold text-center">Расположение</h2>
+                    <div class="col-12"><br></div>
+                    <div class="col-4 mx-auto">
+                        <p class="fs-2 text-center">НОК "ЖУРАВЛИ"<br><a href="https://nok-juravli.ru" target="_blank">https://nok-juravli.ru</a><br>Махачкала, Дагестан</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                          <button class="btn btn-success fs-2" type="button"><a href="https://google.com" target="_blank" class="link-light text-decoration-none">Подать заявку</a></button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
             </div>
         </div>
-
-        <div id="footer">
-            <h1>КОНТАКТЫ ДЛЯ СВЯЗИ</h1>
-            <p>email: example@mail.ru</p>
-        </div>
-
-
     </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core theme JS-->
-        <script src="https://kit.fontawesome.com/62704fc6a6.js" crossorigin="anonymous"></script>
+    <div id="footer" class="container">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="text-center">Время</h4>
+                        <span>...</span>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-center">Место</h4>
+                        <span>...</span>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-center">Контакты</h4>
+                        <span>...</span>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="text-center">Что-то еще</h4>
+                        <span>...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

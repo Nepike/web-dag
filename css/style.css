@@ -8,13 +8,12 @@
 	src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf");
 }
 
-:root {
-    font-size: 16px;
-    font-family: 'Rubik', sans-serif;
 
-}
 
 body {
+	font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
 	background: url("../img/body_bg.jpg") repeat;
 	background-size: 30% ;
 /*	background-image: url('../img/garden-wall-simple-1.jpg');
@@ -54,9 +53,13 @@ body {
 }
 
 #header .plate {
-	border-radius: 50px;
-	background-color: white;
+	border-radius: 10px;
+	background-color: rgba(255, 255 ,255, 0.1);
 	padding: 20px 10px;
+}
+
+#header .timer-block {
+	background-color: rgba(255, 255 ,255, 0.5);
 }
 
 #org-uni img {
@@ -101,9 +104,9 @@ body {
 }
 
 .org-img-3 {
-    top: 0px;
-    left: -25px;
-    width: 350px;
+    top: -200px;
+    left: -125px;
+    width: 450px;
 }
 
 
@@ -216,9 +219,6 @@ body {
 }
 
 @media (max-width: 576px) {
-	#demo {
-		display: none;
-	}
 
 	#PlaceCarousel img {
 	width: 400px;
@@ -279,76 +279,9 @@ body {
 	}
 
 	.org-img-3 {
-	    top: 0px;
-	    left: -25px;
-	    width: 250px;
+        top: -200px;
+        left: -156px;
+        width: 450px;
 	}
 
 }
-
-/*@media (max-width: 250px) {
-	#PlaceCarousel img {
-	width: 200px;
-	height: 150px;
-	}
-
-	#org .img-wrapper, #prog .img-wrapper, #speakers .img-wrapper {
-		width: 100px;
-		height: 100px;
-	}
-
-	.lec-img-1 {
-	    top: 0px;
-	    left: -65px;
-	    width: 300px;
-	}
-
-	.lec-img-2 {
-	    top: -20px;
-	    left: -100px;
-	    width: 300px;
-	}
-
-	.lec-img-3 {
-	    top: -20px;
-	    left: 0px;
-	    width: 100px;
-	}
-
-	.prog-img-1 {
-	    top: 0px;
-	    left: -100px;
-	    width: 300px;
-	}
-
-	.prog-img-2 {
-	    top: -35px;
-	    left: -100px;
-	    width: 300px;
-	}
-
-	.prog-img-3 {
-	    top: 0px;
-	    left: -120px;
-	    width: 300px;
-}
-
-	.org-img-1 {
-    top: -121px;
-    left: -445px;
-    width: 800px;
-	}
-
-	.org-img-2 {
-	    top: 0px;
-	    left: -20px;
-	    width: 300px;
-	}
-
-	.org-img-3 {
-	    top: 0px;
-	    left: -25px;
-	    width: 150px;
-	}
-
-}*/

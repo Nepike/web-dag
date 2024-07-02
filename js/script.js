@@ -27,3 +27,25 @@ if (distance < 0) {
   document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+var header = $('#header');
+
+var backgrounds = new Array(
+    'url(img/BG1.jpg)'
+  , 'url(img/BG2.jpg)'
+  , 'url(img/BG3.jpg)'
+);
+    
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);

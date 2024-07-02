@@ -49,6 +49,13 @@ body {
 
 #header {
 	background: url("../img/header_bg.png") no-repeat;
+
+	background-size: 1320px 764px;
+
+	transition: background-image 1s ease-in-out;
+    /* Если хотите плавный переход непрозрачности */
+    transition: background 1s ease-in-out;
+
 	padding-top: 100px;
 }
 

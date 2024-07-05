@@ -37,6 +37,14 @@ var backgrounds = new Array(
     'url(img/BG1.jpg)'
   , 'url(img/BG2.jpg)'
   , 'url(img/BG3.jpg)'
+  , 'url(img/BG4.jpg)'
+  , 'url(img/BG5.jpg)'
+  , 'url(img/BG6.jpg)'
+  , 'url(img/BG7.jpg)'
+  , 'url(img/BG8.jpg)'
+  , 'url(img/BG9.jpg)'
+  , 'url(img/BG10.jpg)'
+
 );
     
 var current = 0;
@@ -46,6 +54,6 @@ function nextBackground() {
     current = current % backgrounds.length;
     header.css('background-image', backgrounds[current]);
 }
-setInterval(nextBackground, 5000);
+setInterval(nextBackground, 6000);
 
 header.css('background-image', backgrounds[0]);

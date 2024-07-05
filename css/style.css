@@ -29,7 +29,7 @@ body {
 
 
 #header {
-	background: url("../img/header_bg.png") no-repeat;
+	background: url("../img/BG1.jpg") no-repeat;
 
 	background-size: 1320px 764px;
 
@@ -37,7 +37,7 @@ body {
     /* Если хотите плавный переход непрозрачности */
     transition: background 1s ease-in-out;
 
-	padding-top: 100px;
+	padding: 200px 0px 150px 0px;
 }
 
 #header .plate {
@@ -183,7 +183,7 @@ body {
 
 #footer {
 	background-color: #eeeeee;
-	height: 300px;
+	min-height: 300px;
 }
 
 
@@ -200,7 +200,7 @@ body {
 	}
 
 	#timetable tr {
-		font-size: 5vw;
+		font-size: 20px;
 	}
 
 
@@ -270,6 +270,10 @@ body {
         top: -200px;
         left: -156px;
         width: 450px;
+	}
+
+		#timetable tr {
+		font-size: 13px;
 	}
 
 }

@@ -103,6 +103,12 @@ body {
     width: 300px;
 }
 
+.org-img-5 {
+    top: 0px;
+    left: -40px;
+    width: 400px;
+}
+
 
 
 #speakers .img-wrapper {
@@ -192,6 +198,11 @@ body {
 	min-height: 300px;
 }
 
+#footer-logo {
+	width: 400px;
+}
+
+
 
 @media (max-width: 1400px) {
     #logo {
@@ -208,6 +219,11 @@ body {
 	#timetable tr {
 		font-size: 20px;
 	}
+
+	#footer-logo {
+		width: 200px;
+	}
+
 
 
 }
@@ -258,7 +274,7 @@ body {
 	    top: 0px;
 	    left: -120px;
 	    width: 400px;
-}
+	}
 
 	.org-img-1 {
     top: -121px;
@@ -284,8 +300,19 @@ body {
 	    width: 200px;
 	}
 
-		#timetable tr {
+	.org-img-5 {
+	    top: 0px;
+	    left: -40px;
+	    width: 300px;
+	}
+
+	#timetable tr {
 		font-size: 13px;
 	}
+
+	#footer-logo {
+		width: 250px;
+	}
+
 
 }

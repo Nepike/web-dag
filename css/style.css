@@ -41,9 +41,9 @@ body {
 }
 
 #footer {
-	background-image:
+/*	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-		url("../img/footer_bg.jpg");
+		url("../img/footer_bg.jpg");*/
 
 	background: url("../img/footer_bg.jpg");
 
@@ -55,7 +55,8 @@ body {
 }
 
 #footer a{
-	color: purple;
+	color: #4a014b;
+	font-weight: bold;
 }
 
 #header .plate {

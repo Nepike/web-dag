@@ -45,9 +45,9 @@ body {
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 		url("../img/footer_bg.jpg");*/
 
-	background: url("../img/footer_bg.jpg");
+	background: url("../img/footer_bg.jpg") no-repeat;
 
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 #footer {

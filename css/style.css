@@ -40,13 +40,23 @@ body {
 	padding: 200px 0px 150px 0px;
 }
 
-/*#footer {
+#footer {
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-		url("../img/topographic-pattern.jpg");
+		url("../img/footer_bg.jpg");
 
-	background-size: 50% auto;
-}*/
+	background: url("../img/footer_bg.jpg");
+
+	background-size: 100% auto;
+}
+
+#footer {
+	color: white;
+}
+
+#footer a{
+	color: purple;
+}
 
 #header .plate {
 	border-radius: 10px;
@@ -130,6 +140,10 @@ body {
 #speakers .img-wrapper img {
 	position: absolute;
 	height: auto;
+}
+
+#speakers a {
+    overflow-wrap: break-word; /* для переноса длинных URL */
 }
 
 .lec-img {

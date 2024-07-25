@@ -31,13 +31,12 @@ body {
 #header {
 	background: url("../img/BG1.jpg") no-repeat;
 
-	background-size: 1320px 764px;
+	background-size: cover;
 
 	transition: background-image 1s ease-in-out;
     /* Если хотите плавный переход непрозрачности */
     transition: background 1s ease-in-out;
 
-	padding: 200px 0px 150px 0px;
 }
 
 #footer {
@@ -231,11 +230,6 @@ body {
 
 
 
-@media (max-width: 1400px) {
-    #logo {
-        display: none;
-    }
-}
 
 @media (max-width: 768px) {
 	#PlaceCarousel img {
@@ -249,6 +243,14 @@ body {
 
 	#footer-logo {
 		width: 200px;
+	}
+
+	#org-uni img {
+		width: 140px;
+	}
+
+	#logo img{
+		width: 250px;
 	}
 
 

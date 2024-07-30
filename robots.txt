@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://quantmat.lebedev.ru/sitemap.xml

@@ -33,27 +33,35 @@ if (distance < 0) {
 
 var header = $('#header');
 
-var backgrounds = new Array(
-    'url(img/BG1.jpg)'
-  , 'url(img/BG2.jpg)'
-  , 'url(img/BG3.jpg)'
-  , 'url(img/BG4.jpg)'
-  , 'url(img/BG5.jpg)'
-  , 'url(img/BG6.jpg)'
-  , 'url(img/BG7.jpg)'
-  , 'url(img/BG8.jpg)'
-  , 'url(img/BG9.jpg)'
-  , 'url(img/BG10.jpg)'
+var backgrounds = [
+    'img/BG1.jpg',
+    'img/BG2.jpg',
+    'img/BG3.jpg',
+    'img/BG4.jpg',
+    'img/BG5.jpg',
+    'img/BG6.jpg',
+    'img/BG7.jpg',
+    'img/BG8.jpg',
+    'img/BG9.jpg',
+    'img/BG10.jpg'
+];
 
-);
-    
 var current = 0;
+
+// Предварительная загрузка изображений
+var images = [];
+for (var i = 0; i < backgrounds.length; i++) {
+    var img = new Image();
+    img.src = backgrounds[i];
+    images.push(img);
+}
 
 function nextBackground() {
     current++;
     current = current % backgrounds.length;
-    header.css('background-image', backgrounds[current]);
+    header.css('background-image', 'url(' + backgrounds[current] + ')');
 }
+
 setInterval(nextBackground, 6000);
 
-header.css('background-image', backgrounds[0]);
+header.css('background-image', 'url(' + backgrounds[0] + ')');
